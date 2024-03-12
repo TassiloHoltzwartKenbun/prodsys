@@ -92,7 +92,7 @@ class ScenarioOptionsData(BaseModel):
 
     transformations: List[ReconfigurationEnum]
     machine_controllers: List[Literal["FIFO", "LIFO", "SPT"]]
-    transport_controllers: List[Literal["FIFO", "SPT_transport"]]
+    transport_controllers: List[Literal["FIFO", "SPT_transport", "Nearest_origin_and_longest_target_queues_transport"]]
     routing_heuristics: List[Literal["shortest_queue", "random", "FIFO"]]
     positions: List[conlist(float, min_items=2, max_items=2)]
 
